@@ -1,0 +1,17 @@
+#search{
+   
+    padding: 8px 22px;
+    max-width: 300px;
+    background-color: #fff;
+    border-radius: 32px;
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 20px;
+}
+#down-arrow{
+    color: lightgreen;
+}  
