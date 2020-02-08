@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LocalWire | Home</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100i&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <h1>LocalWire</h1>
+        <hr>
+
+    </header>
+  
+  
+    <div id="overlay"></div>
+
+    <div class="translucent-form-overlay">
+        <form>
+          <h3>Search</h3>
+          <div class="row columns">
+            <label>City:
+              <input type="text" name="keyword" placeholder="Enter City">
+            </label>
+          </div>
+
+          <div class="row">
+            <label class="columns small-12">Start Date</label>
+            <div class="columns small-6">
+              <input type="date" id="start-date" placeholder="Start Date">
+            </div>
+            <div class="row">
+                <label class="columns small-12">End Date</label>
+                <div class="columns small-6">
+                  <input type="date" id="end-date" placeholder="End Date">
+                </div>
+
+
+          </div>
+          <button type="button" class="waves-effect waves-light btn">
+            Search
+          </button>
+       </form>
+      </div>
+      
+      
+
+    <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
