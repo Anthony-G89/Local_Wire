@@ -24,7 +24,9 @@
     </header>
   
   
-    <div id="overlay"></div>
+    <!-- <div id="overlay"></div> -->
+
+
     <div class="container">    
       <button type="submit" id="search" > Where to?
           <i class="fas fa-chevron-down" id="down-arrow"></i>
@@ -36,7 +38,7 @@
           <h3>Search</h3>
           <div class="row columns">
             <label>City:
-              <input type="text" name="keyword" placeholder="Enter City">
+              <input type="text" name="keyword" placeholder="Enter City" id="city-search">
             </label>
           </div>
 
@@ -53,14 +55,14 @@
 
 
           </div>
-          <button type="button" class="waves-effect waves-light btn">
+          <button type="button" class="waves-effect waves-light btn" id="search-button">
             Search
           </button>
        </form>
       </div>
       
       
-
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="script.js"></script>
