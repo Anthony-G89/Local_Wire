@@ -1,4 +1,4 @@
-#search{
+#searchBtn{
    
     padding: 8px 22px;
     max-width: 300px;
@@ -11,9 +11,17 @@
     cursor: pointer;
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 20px;
+    z-index: 5;
+   
 }
 #down-arrow{
     color: lightgreen;
+}
+#closeForm{
+  float: right;
+  margin-top: -32px;
+  background-color: white;
+  color: red;
 }
 
 h1 {
@@ -27,10 +35,11 @@ h1 {
     background-color: rgba(54, 54, 54, 0.8);
     padding: 20px;
     color: #fefefe;
+    
   }
   
   .translucent-form-overlay .columns.row {
-    display: block;
+    
   }
   
   .translucent-form-overlay h3, .translucent-form-overlay label {
@@ -38,7 +47,7 @@ h1 {
   }
   
   .translucent-form-overlay input, .translucent-form-overlay select {
-    color: #8a8a8a;
+    color: white;
   }
   
   .translucent-form-overlay input::-webkit-input-placeholder {
