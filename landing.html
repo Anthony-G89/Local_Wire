@@ -6,13 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>LocalWire | Home</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100i&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:700i|Odibee+Sans|Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
-
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -20,19 +16,15 @@
 <body>
 
     <header>
-        <h1>LocalWire</h1>
-        <hr>
+        <h1 class="headerTitle">LocalWire</h1>
     </header>
   
   
     <!-- <div id="overlay"></div> -->
     <div class="container">    
-      <button type="submit" id="searchBtn" > Where to?
-          <i class="fas fa-chevron-down" id="down-arrow"></i>
-      </button>
-  </div>
-
-    <div id="searchForm" class="translucent-form-overlay"  style="display: none;">
+      <button type="submit" id="searchBtn">Where to?<span><i class="fas fa-chevron-down" id="down-arrow"></i></span></button>
+      
+      <div id="searchForm" class="translucent-form-overlay" style="display: none;">
         <form>
           <i id="closeForm" class="far fa-window-close"></i>
           <h3>Search</h3>
@@ -60,6 +52,10 @@
           </button>
        </form>
       </div>
+
+    </div>
+
+
       
       
 
