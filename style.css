@@ -1,67 +1,12 @@
-#search{
-   
-    padding: 8px 22px;
-    max-width: 300px;
-    background-color: #fff;
-    border-radius: 32px;
-    font-size: 30px;
-    line-height: 28px;
-    font-weight: 400;
-    color: #000;
-    cursor: pointer;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 20px;
-}
-#down-arrow{
-    color: lightgreen;
-}
+/* Body Styling */
 
-h1 {
-    font-family: 'Josefin Sans', sans-serif;
-  }
-
-/* Materialize Search*/
-.translucent-form-overlay {
-    max-width: 500px;
-    width: 100%;
-    background-color: rgba(54, 54, 54, 0.8);
-    padding: 20px;
-    color: #fefefe;
-  }
-  
-  .translucent-form-overlay .columns.row {
-    display: block;
-  }
-  
-  .translucent-form-overlay h3, .translucent-form-overlay label {
-    color: #fefefe;
-  }
-  
-  .translucent-form-overlay input, .translucent-form-overlay select {
-    color: #8a8a8a;
-  }
-  
-  .translucent-form-overlay input::-webkit-input-placeholder {
-    color: #8a8a8a;
-  }
-  
-  .translucent-form-overlay input:-ms-input-placeholder {
-    color: #8a8a8a;
-  }
-  
-  .translucent-form-overlay input::placeholder {
-    color: #8a8a8a;
-  }
-  
-  
 * {
 	margin: 0px;
 }
 
 html,
 body {
-	/* box-sizing: border-box; */
-	position: relative;
+	/* position: relative; */
 	height: 100%;
 	width: 100%;
 	background-image: url("images/background.jpg");
@@ -71,6 +16,19 @@ body {
 	background-size: cover;
 }
 
+/* container */
+
+.container {
+	width: 100%;
+	height: 80vh;
+	position: relative;
+	margin: 20% auto 0;
+	text-align: center;
+}
+
+/* ============================================ */
+
+/* overlay for the entire page */
 #overlay {
 	position: fixed;
 	width: 100%;
@@ -79,7 +37,86 @@ body {
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(100, 98, 98, 0.5);
+	background-color: rgba(143, 140, 140, 0.4);
 	z-index: 2;
 	cursor: pointer;
 }
+
+/* ========================================= */
+
+/* Search Button Styling  */
+
+#search {
+	padding: 8px 22px;
+	max-width: 300px;
+	background-color: #fff;
+	border-radius: 32px;
+	font-size: 30px;
+	line-height: 28px;
+	letter-spacing: 2px;
+	font-weight: 400;
+	color: rgb(36, 30, 30);
+	cursor: pointer;
+	font-family: 'Roboto', sans-serif;
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+	justify-content: center;
+	/* position: absolute; */
+	/* top: 50%;
+	left: 40%; */
+}
+#down-arrow {
+	color: lightgreen;
+	padding-left: 25px;
+}
+
+/* ======================================== */
+
+/* Header  */
+h1 {
+	font-family: 'Cantarell', sans-serif;
+	font-style: italic;
+	margin: 0;
+	border: none;
+	color: #be7d94;
+	z-index: 4;
+}
+/* ===================================== */
+
+/* Materialize Search*/
+.translucent-form-overlay {
+	max-width: 500px;
+	width: 100%;
+	background-color: rgba(54, 54, 54, 0.8);
+	padding: 20px;
+	color: #fefefe;
+}
+
+.translucent-form-overlay .columns.row {
+	display: block;
+}
+
+.translucent-form-overlay h3,
+.translucent-form-overlay label {
+	color: #fefefe;
+}
+
+.translucent-form-overlay input,
+.translucent-form-overlay select {
+	color: #8a8a8a;
+}
+
+.translucent-form-overlay input::-webkit-input-placeholder {
+	color: #8a8a8a;
+}
+
+.translucent-form-overlay input:-ms-input-placeholder {
+	color: #8a8a8a;
+}
+
+.translucent-form-overlay input::placeholder {
+	color: #8a8a8a;
+}
+
+/* ===================================== */
