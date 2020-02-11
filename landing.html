@@ -8,6 +8,7 @@
     <title>LocalWire | Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cantarell:700i|Odibee+Sans|Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
@@ -19,13 +20,13 @@
     </header>
   
   
-    <div id="overlay"></div>
+    <!-- <div id="overlay"></div> -->
     <div class="container">    
-      <button type="submit" id="search">Where to?<span><i class="fas fa-chevron-down" id="down-arrow"></i></span></button>
-  </div>
-
-    <div class="translucent-form-overlay">
+      <button type="submit" id="searchBtn">Where to?<span><i class="fas fa-chevron-down" id="down-arrow"></i></span></button>
+      
+      <div id="searchForm" class="translucent-form-overlay" style="display: none;">
         <form>
+          <i id="closeForm" class="far fa-window-close"></i>
           <h3>Search</h3>
           <div class="row columns">
             <label>City:
@@ -51,12 +52,17 @@
           </button>
        </form>
       </div>
+
+    </div>
+
+
       
       
 
-    <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="script.js"></script>
+    <script src="landingJava.js"></script>
 </body>
 
 </html>
