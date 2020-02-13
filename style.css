@@ -113,7 +113,7 @@ h1 {
 
 .translucent-form-overlay input,
 .translucent-form-overlay select {
-	color: #8a8a8a;
+	color: white;
 }
 
 .translucent-form-overlay input::-webkit-input-placeholder {
