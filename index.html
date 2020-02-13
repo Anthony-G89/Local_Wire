@@ -5,22 +5,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>LocalWire | Plan Local Tonight!</title>
-
-    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100i&display=swap" rel="stylesheet">
+    <title>LocalWire | Home</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="indexstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:700i|Odibee+Sans|Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-  <header>
-      <h1>LocalWire</h1>
-  </header>
+
+    <header>
+        <h1 class="headerTitle">LocalWire</h1>
+    </header>
   
+  
+    <!-- <div id="overlay"></div> -->
+
+    <div class="container">    
+      <button type="submit" id="searchBtn">Where to?<span><i class="fas fa-chevron-down" id="down-arrow"></i></span></button>
+      
+      <div id="searchForm" class="translucent-form-overlay" style="display: none;">
+        <form>
+          <i id="closeForm" class="far fa-window-close"></i>
+          <h3>Search</h3>
+          <div class="row columns">
+            <label>City:
+              <input type="text" name="keyword" placeholder="Enter City" id="city-search">
+            </label>
+          </div>
+
+          <div class="row">
+            <label class="columns small-12">Start Date</label>
+            <div class="columns small-6">
+              <input type="date" id="start-date" placeholder="Start Date">
+            </div>
+            <div class="row">
+                <label class="columns small-12">End Date</label>
+                <div class="columns small-6">
+                  <input type="date" id="end-date" placeholder="End Date">
+                </div>
 
 
+          </div>
+          <button type="button" class="waves-effect waves-light btn" id="search-button">
+            Search
+          </button>
+       </form>
+      </div>
+
+    </div>
+
+
+      
+      
     <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="script.js"></script>
+    <script src="landingJava.js"></script>
+      
+      <script src="script.js"></script>
 </body>
+
 </html>
