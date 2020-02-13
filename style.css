@@ -71,6 +71,11 @@ body {
 	color: lightgreen;
 	padding-left: 25px;
 }
+#closeForm{
+	float: right;
+	margin-top: -35px;
+	color: #26a69a;
+}
 
 /* ======================================== */
 
@@ -86,13 +91,15 @@ h1 {
 /* ===================================== */
 
 /* Materialize Search*/
-.translucent-form-overlay {
+#searchForm {
 	max-width: 500px;
 	width: 100%;
 	background-color: rgba(54, 54, 54, 0.8);
 	padding: 20px;
 	color: #fefefe;
 	display: block;
+	display: inline-block;
+	text-align: left;
 }
 
 .translucent-form-overlay .columns.row {
