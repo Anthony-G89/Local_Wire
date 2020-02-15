@@ -1,17 +1,20 @@
-var searchButton = $('#searchBtn');
-var searchForm = $('#searchForm');
-var closeForm = $('#closeForm');
+$(document).ready(function () {
 
-searchButton.on('click', function(e) {
-	console.log('hi');
-	e.preventDefault();
+	var searchButton = $('#searchBtn');
+	var searchForm = $('#searchForm');
+	var closeForm = $('#closeForm');
 
-	searchButton.hide();
-	searchForm.show();
-});
+	searchButton.on('click', function (e) {
+		e.preventDefault();
+		console.log('hi');
 
-closeForm.on('click', function() {
-	searchForm.hide();
+		searchButton.hide();
+		searchForm.show();
+	});
 
+	closeForm.on('click', function () {
+		searchForm.hide();
+		searchButton.show();
+	});
 
 });
