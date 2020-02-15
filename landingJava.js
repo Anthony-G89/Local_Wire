@@ -1,15 +1,21 @@
-var searchButton = $('#searchBtn');
-var searchForm = $('#searchForm');
-var closeForm = $('#closeForm');
+$(document).ready(function () {
 
-searchButton.on('click', function() {
-	console.log('hi');
 
-	searchButton.hide();
-	searchForm.show();
-});
+	var searchButton = $('#searchBtn');
+	var searchForm = $('#searchForm');
+	var closeForm = $('#closeForm');
 
-closeForm.on('click', function() {
-	searchForm.hide();
-	searchButton.show();
+	searchButton.on('click', function (e) {
+		e.preventDefault();
+		console.log('hi');
+
+		searchButton.hide();
+		searchForm.show();
+	});
+
+	closeForm.on('click', function () {
+		searchForm.hide();
+		searchButton.show();
+	});
+
 });

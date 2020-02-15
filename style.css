@@ -130,6 +130,7 @@ h1 {
 
 /* ===================================== */
 
+
 .brew-card {
 	height: 200px;
 	width: 300px;
@@ -150,5 +151,10 @@ h1 {
 	width: 350px;
 	padding: 5px;
 	border: 1px solid;
+
+
+
+.container-for-carousel{
+	
 
 }
