@@ -129,3 +129,26 @@ h1 {
 }
 
 /* ===================================== */
+
+.brew-card {
+	height: 200px;
+	width: 300px;
+	padding: 5px;
+	border: 1px solid;
+}
+
+.rest-card {
+	height: 350px;
+	width: 350px;
+	padding: 5px;
+	border: 1px solid;
+
+}
+
+.event-card {
+	height: 350px;
+	width: 350px;
+	padding: 5px;
+	border: 1px solid;
+
+}
