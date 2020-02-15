@@ -2,18 +2,45 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>LocalWire | Home</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Cantarell:700i|Odibee+Sans|Roboto&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LocalWire | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Cantarell:700i|Odibee+Sans|Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
 
 </head>
 
 <body>
+
+
+    <header>
+        <h1 class="headerTitle">LocalWire</h1>
+    </header>
+  
+  
+    <!-- <div id="overlay"></div> -->
+
+    <div class="container">    
+      <button type="submit" id="searchBtn">Where to?<span><i class="fas fa-chevron-down" id="down-arrow"></i></span></button>
+      
+
+     <!--SEARCH FORM BOX--> 
+      <div id="searchForm" class="translucent-form-overlay" style="display: none;">
+        <form>
+          <i id="closeForm" class="far fa-window-close"></i>
+          <h3>Search</h3>
+          <div class="row columns">
+            <label>City:
+              <input type="text" name="keyword" placeholder="Enter City" id="city-search">
+            </label>
+          </div>
 
   <header>
     <h1 class="headerTitle">LocalWire</h1>
@@ -47,7 +74,6 @@
               <input type="date" id="end-date" placeholder="End Date">
             </div>
 
-
           </div>
           <button type="submit" class="waves-effect waves-light btn" id="search-button">
             Search
@@ -65,6 +91,23 @@
 
 
 
+    <div class="brew-display">
+      Events go here
+
+    </div>  
+    <div class="rest-display">
+      Events go here
+
+    </div>
+
+    <div class="event-display">
+      Events go here
+
+    </div>
+
+      
+      
+    <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
 
   <script src="https://kit.fontawesome.com/d362bae7c2.js" crossorigin="anonymous"></script>
 
@@ -77,4 +120,5 @@
   <script src="script.js"></script>
 </body>
 
+          
 </html>

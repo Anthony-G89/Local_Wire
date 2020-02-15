@@ -81,11 +81,11 @@ body {
 
 /* Header  */
 h1 {
-	font-family: 'Cantarell', sans-serif;
-	font-style: italic;
+	font-family: 'Kaushan Script', cursive;
+	/* font-style: italic; */
 	margin: 0;
 	border: none;
-	color: #be7d94;
+	color: white;
 	/* z-index: 4; */
 }
 /* ===================================== */
@@ -131,6 +131,30 @@ h1 {
 /* ===================================== */
 
 
+.brew-card {
+	height: 200px;
+	width: 300px;
+	padding: 5px;
+	border: 1px solid;
+}
+
+.rest-card {
+	height: 350px;
+	width: 350px;
+	padding: 5px;
+	border: 1px solid;
+
+}
+
+.event-card {
+	height: 350px;
+	width: 350px;
+	padding: 5px;
+	border: 1px solid;
+
+
+
 .container-for-carousel{
 	
+
 }
