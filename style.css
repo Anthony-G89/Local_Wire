@@ -134,7 +134,7 @@ h2 {
 
 .brew-card {
 	height: 250px;
-	width: 250px;
+	width: 300px;
 	padding: 5px;
 	border: 1px solid;
 	display: inline-block;
@@ -160,5 +160,5 @@ h2 {
 }
 
 h5 {
-	height: 100px;
+	height: 75px;
 }
