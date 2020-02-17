@@ -7,9 +7,9 @@
 html,
 body {
 	/* position: relative; */
-	height: 100%;
+	height: 100vh;
 	width: 100%;
-	background-image: url("images/background.jpg");
+	background-image: url("images/42483.jpg");
 	background-repeat: no-repeat;
 	background-color: #cccccc;
 	background-position: center;
@@ -71,12 +71,11 @@ body {
 	color: lightgreen;
 	padding-left: 25px;
 }
-#closeForm{
+#closeForm {
 	float: right;
 	margin-top: -35px;
 	color: #26a69a;
 }
-
 
 /* Header  */
 h1 {
@@ -91,7 +90,6 @@ h2 {
 	margin: 0;
 	border: none;
 	color: white;
-
 }
 
 /* Materialize Search*/
@@ -134,7 +132,6 @@ h2 {
 
 /* ===================================== */
 
-
 .brew-card {
 	height: 250px;
 	width: 250px;
@@ -151,7 +148,6 @@ h2 {
 	border: 1px solid;
 	display: inline-block;
 	margin: 10px;
-
 }
 
 .event-card {
@@ -161,7 +157,6 @@ h2 {
 	border: 1px solid;
 	display: inline-block;
 	margin: 10px;
-
 }
 
 h5 {
