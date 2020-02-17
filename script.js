@@ -103,10 +103,11 @@ $(document).ready(function () {
                     var restImg = $("<img>").attr("src", restList[i].restaurant.featured_image).attr("height", 150).attr("width", 200);
                     var restNameP = $("<h5>").text(restList[i].restaurant.name);
                     var restCuisineP = $("<p>").text(restList[i].restaurant.cuisines);
-                    var restAddressP = $("<p>").text("Address: " + restList[i].restaurant.location.address + ", Locality: " + restList[i].restaurant.location.locality);
+                    var restAddressP = $("<p>").text(restList[i].restaurant.location.address);
+                    var restLocality = $("<p>").text("Locality: " + restList[i].restaurant.location.locality);
                     var restPhoneP = $("<p>").text("Phone: " + restList[i].restaurant.phone_numbers);
                     var restMenu = $("<a>").attr("href", restList[i].restaurant.menu_url).attr("target", "_blank").text("View Menu");
-                    newRestDiv.append(restImg, restNameP, restCuisineP, restAddressP, restPhoneP, restMenu);
+                    newRestDiv.append(restImg, restNameP, restCuisineP, restAddressP, restLocality, restPhoneP, restMenu);
                     $(".rest-display").append(newRestDiv);
 
                 }
