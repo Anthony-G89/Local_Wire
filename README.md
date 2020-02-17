@@ -1,8 +1,6 @@
 # Project 1 - UCF Coding Bootcamp
 
-With this project, we were tasked to use everything we have learned, to this point, to create a web application of our
-choosing. We chose to make a website that displays local restaurants, breweries, and events after a user enters a 
-city into a search input. 
+With this project, we were tasked to use everything we have learned, to this point, to create a web application of our choosing. We chose to make a website that displays local restaurants, breweries, and events after a user enters a city into a search input. 
 
 
 ## User Story
