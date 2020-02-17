@@ -20,7 +20,7 @@ SO THAT I can plan to eat, drink, and party accordingly
 ## Screenshots of Application
 ---
 
-![Home](/images/index_SS.png)
+![Home](/images/Index_SS.png)
 ![Search](/images/Search_SS.png)
 ![Results](/images/Results_SS.png)
 
