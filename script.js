@@ -16,11 +16,16 @@ $(document).ready(function () {
 
 
 
-
     searchBtn.on("click", function (event) {
         event.preventDefault();
         searchForm.hide();
         searchButton.show();
+
+
+        var startDate = $("#start-date").val();
+        console.log(startDate);
+        var endDate = $("#end-date").val();
+        console.log(endDate);
 
         var citySearch = $("#city-search").val().trim();
         if (!citySearch) return;
