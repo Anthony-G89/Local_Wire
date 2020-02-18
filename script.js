@@ -126,7 +126,7 @@ $(document).ready(function () {
         // TICKETMASTER Event Search
         $.ajax({
             type: "GET",
-            url: "https://app.ticketmaster.com/discovery/v2/events.json?size=20&apikey=mGRhyVGMqSKLiGRVm4XLR9SJBSPsX0Eg&city=" + citySearch + "&startDateTime=" + startDate + "T12:00:59Z"+ "&endDateTime=" + endDate + "T11:59:59Z",
+            url: "https://app.ticketmaster.com/discovery/v2/events.json?size=30&apikey=mGRhyVGMqSKLiGRVm4XLR9SJBSPsX0Eg&city=" + citySearch + "&startDateTime=" + startDate + "T12:00:59Z"+ "&endDateTime=" + endDate + "T11:59:59Z",
             async: true,
             dataType: "json",
             success: function (json) {
