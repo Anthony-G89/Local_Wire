@@ -4,6 +4,10 @@
 	margin: 0px;
 }
 
+#search-button {
+	background-color: #A4C539;
+}
+
 html,
 body {
 	/* position: relative; */
@@ -79,7 +83,7 @@ body {
 #closeForm {
 	float: right;
 	margin-top: -35px;
-	color: #26a69a;
+	color: #A4C539;
 }
 
 /* Header  */
