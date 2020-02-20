@@ -23,9 +23,9 @@ $(document).ready(function () {
 
 
         var startDate = $("#start-date").val();
-        console.log(startDate);
+        // console.log(startDate);
         var endDate = $("#end-date").val();
-        console.log(endDate);
+        // console.log(endDate);
 
         var citySearch = $("#city-search").val().trim();
         if (!citySearch) return;
@@ -74,7 +74,7 @@ $(document).ready(function () {
             "user-key": "5a33e1ec7d6535e6ef16c81e3833e48a"
         }
     }).then(function (res) {
-        console.log("city id " + res.location_suggestions[0].id)
+        // console.log("city id " + res.location_suggestions[0].id)
         var cityID = res.location_suggestions[0].id;
 
             var zomatoListURL = "https://developers.zomato.com/api/v2.1/search?entity_id=" + cityID + "&entity_type=city";
@@ -89,16 +89,16 @@ $(document).ready(function () {
                 }
             }).then(function (res) {
                 var restList = res.restaurants;
-                console.log(restList);
+                // console.log(restList);
                 $(".rest-display").empty();
 
-                console.log(restList[0].restaurant.featured_image);
-                console.log(restList[0].restaurant.name);
-                console.log(restList[0].restaurant.cuisines)
-                console.log(restList[0].restaurant.location.address);
-                console.log(restList[0].restaurant.location.locality);
-                console.log(restList[0].restaurant.phone_numbers);
-                console.log(restList[0].restaurant.menu_url);
+                // console.log(restList[0].restaurant.featured_image);
+                // console.log(restList[0].restaurant.name);
+                // console.log(restList[0].restaurant.cuisines)
+                // console.log(restList[0].restaurant.location.address);
+                // console.log(restList[0].restaurant.location.locality);
+                // console.log(restList[0].restaurant.phone_numbers);
+                // console.log(restList[0].restaurant.menu_url);
 
 
                 for (var i = 0; i < restList.length; i++) {
@@ -134,12 +134,12 @@ $(document).ready(function () {
                 // console.log(json._embedded.events[0]
                 var events = json._embedded.events
 
-                console.log(events[0].name)
-                console.log(events[0].dates.start.localDate)
-                console.log(events[0].dates.start.localTime)
-                console.log(events[0]._embedded.venues[0].name)
-                console.log(events[0].images[0].url)
-                console.log(events[0].url)
+                // console.log(events[0].name)
+                // console.log(events[0].dates.start.localDate)
+                // console.log(events[0].dates.start.localTime)
+                // console.log(events[0]._embedded.venues[0].name)
+                // console.log(events[0].images[0].url)
+                // console.log(events[0].url)
 
                 $(".event-display").empty();
                 for (var i = 0; i < events.length; i++) {
