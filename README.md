@@ -20,9 +20,9 @@ SO THAT I can plan to eat, drink, and party accordingly
 ## Screenshots of Application
 ---
 
-![Home](/images/Index_SS.png)
-![Search](/images/Search_SS.png)
-![Results](/images/Results_SS.png)
+![Home](/assets/images/Index_SS.png)
+![Search](/assets/images/Search_SS.png)
+![Results](/assets/images/Results_SS.png)
 
 
 ## Application Requirements
