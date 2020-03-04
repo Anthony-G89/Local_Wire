@@ -6,7 +6,7 @@ $(document).ready(function () {
 
 	searchButton.on('click', function (e) {
 		e.preventDefault();
-		console.log('hi');
+		// console.log('hi');
 
 		searchButton.hide();
 		searchForm.show();
