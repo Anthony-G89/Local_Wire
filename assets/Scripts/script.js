@@ -42,16 +42,21 @@ $(document).ready(function () {
             method: 'GET'
         })
             .then(function (res) {
+                // console.log(res);
+                
                 $(".brew-display").empty();
                 for (var i = 0; i < res.length; i++) {
                     var newBrewDiv = $("<div>").addClass("brew-card card");
                     var brewNameP = $("<h5>").text(res[i].name);
                     var brewTypeP = $("<p>").text("Brewery Type: " + res[i].brewery_type);
-                    var brewAddressP = $("<p>").text(res[i].street);
-                    var brewPhoneP = $("<a>").attr("href", "tel:" + res[i].phone).text("Phone: " + res[i].phone);
+                    var brewAddressP = $("<a>").attr("href","https://map.google.com/maps?q=" + res[i].street).text(res[i].street);
+                    var brewCityP = $("<p>").text(res[i].city);
+                    var brewStateP = $("<p>").text(res[i].state);
+                    var brewPostalP = $("<p>").text(res[i].postal_code);
+                    var brewPhoneP = $("<a>").attr("href", "tel:" + res[i].phone).text("Phone: " +  res[i].phone);
                     var brewWebP = $("<a>").attr("href", res[i].website_url).attr("target", "_blank").text("Visit Website");
 
-                    newBrewDiv.append(brewNameP, brewTypeP, brewAddressP, brewPhoneP, brewWebP)
+                    newBrewDiv.append(brewNameP, brewTypeP, brewAddressP, brewCityP,brewStateP,brewPostalP, brewPhoneP, brewWebP)
                     $(".brew-display").append(newBrewDiv);
     }
 

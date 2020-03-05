@@ -150,6 +150,8 @@ h2 {
 	border: 1px solid;
 	display: inline-block;
 	margin: 10px;
+	
+  
 }
 
 .rest-card {
@@ -170,6 +172,6 @@ h2 {
 	margin: 10px;
 }
 
-h5 {
-	height: 75px;
+a{
+	display: block;
 }
