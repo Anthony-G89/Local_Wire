@@ -1,9 +1,11 @@
 zomatoApi = "5a33e1ec7d6535e6ef16c81e3833e48a";
 ticketmasterApi = "mGRhyVGMqSKLiGRVm4XLR9SJBSPsX0Eg";
+zomatoURL = "https://developers.zomato.com/api/v2.1/cities?q=Orlando";
+breweryURL = "https://api.openbrewerydb.org/breweries?by_city=san_diego";
 
-zomatoURL = "https://developers.zomato.com/api/v2.1/cities?q=Orlando"
-
-breweryURL = "https://api.openbrewerydb.org/breweries?by_city=san_diego"
+const breweryHead = $("#breweryHeader");
+const restHead = $("#restHeader");
+const eventHead = $("#eventsHeader");
 
 apiKeyForGeoLocation = "AIzaSyAU4mTG06oLKb7u5RYEjQrxfmHbiY49epQ";
 
@@ -32,6 +34,10 @@ $(document).ready(function () {
         var citySearch = $("#city-search").val().trim();
         if (!citySearch) return;
         $("#city-search").val("");
+        breweryHead.show();
+        restHead.show();
+        eventHead.show();
+        
 
         // if(navigator.geolocation)
         // navigator.geolocation.getCurrentPosition(function(position){
