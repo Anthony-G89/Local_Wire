@@ -31,6 +31,18 @@ $(document).ready(function () {
         if (!citySearch) return;
         $("#city-search").val("");
 
+        if(navigator.geolocation)
+        navigator.geolocation.getCurrentPosition(function(position){
+            console.log(position);
+            $.get("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + position.coords.latitude + " ," + position.coords.longitude, function(data){
+                console.log(data);
+                
+            })
+            
+            
+
+        })
+
         var breweryURL = "https://api.openbrewerydb.org/breweries?by_city=" + citySearch;
         var zomatoCityID = "https://developers.zomato.com/api/v2.1/cities?q=" + citySearch;
 
