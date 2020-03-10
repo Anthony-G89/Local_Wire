@@ -111,17 +111,8 @@ $(document).ready(function () {
                 }
             }).then(function (res) {
                 var restList = res.restaurants;
-                // console.log(restList);
+                console.log(restList);
                 $(".rest-display").empty();
-
-                // console.log(restList[0].restaurant.featured_image);
-                // console.log(restList[0].restaurant.name);
-                // console.log(restList[0].restaurant.cuisines)
-                // console.log(restList[0].restaurant.location.address);
-                // console.log(restList[0].restaurant.location.locality);
-                // console.log(restList[0].restaurant.phone_numbers);
-                // console.log(restList[0].restaurant.menu_url);
-
 
                 for (var i = 0; i < restList.length; i++) {
 
@@ -130,9 +121,9 @@ $(document).ready(function () {
                     var restImg = $("<img>").attr("src", restList[i].restaurant.featured_image).attr("height", 150).attr("width", 200);
                     var restNameP = $("<h5>").text(restList[i].restaurant.name);
                     var restCuisineP = $("<p>").text(restList[i].restaurant.cuisines);
-                    var restAddressP = $("<p>").text(restList[i].restaurant.location.address);
+                    var restAddressP = $("<a>").attr("href", "https://map.google.com/maps?q=" + restList[i].restaurant.location.address).text(restList[i].restaurant.location.address);
                     var restLocality = $("<p>").text("Locality: " + restList[i].restaurant.location.locality);
-                    var restPhoneP = $("<p>").text("Phone: " + restList[i].restaurant.phone_numbers);
+                    var restPhoneP = $("<a>").attr("href", "tel:" + restList[i].restaurant.phone_numbers).text("Phone: " + restList[i].restaurant.phone_numbers);
                     var restMenu = $("<a>").attr("href", restList[i].restaurant.menu_url).attr("target", "_blank").text("View Menu");
                     newRestDiv.append(restImg, restNameP, restCuisineP, restAddressP, restLocality, restPhoneP, restMenu);
                     $(".rest-display").append(newRestDiv);
@@ -171,7 +162,7 @@ $(document).ready(function () {
                     var eventImg = $("<img>").attr("src", events[i].images[0].url).attr("height", 150).attr("width", 250);
                     var eventName = $("<h5>").text(events[i].name);
                     var eventDateTime = $("<p>").text("Date: " + events[i].dates.start.localDate + " Time: " + (events[0].dates.start.localTime));
-                    var eventVenue = $("<p>").text("Event Venue: " + events[i]._embedded.venues[0].name);
+                    var eventVenue = $("<a>").attr("href", "https://map.google.com/maps?q=" + events[0].dates.start.localTime).text("Event Venue: " + events[i]._embedded.venues[0].name);
                     var eventUrl = $("<a>").attr("href", events[i].url).attr("target", "_blank").text("Purchase Tickets");
 
                     newEventDiv.append(eventImg, eventName, eventDateTime, eventVenue, eventUrl);
