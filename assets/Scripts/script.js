@@ -5,6 +5,8 @@ zomatoURL = "https://developers.zomato.com/api/v2.1/cities?q=Orlando"
 
 breweryURL = "https://api.openbrewerydb.org/breweries?by_city=san_diego"
 
+apiKeyForGeoLocation = "AIzaSyAU4mTG06oLKb7u5RYEjQrxfmHbiY49epQ";
+
 
 $(document).ready(function () {
 
@@ -34,7 +36,7 @@ $(document).ready(function () {
         if(navigator.geolocation)
         navigator.geolocation.getCurrentPosition(function(position){
             console.log(position);
-            $.get("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + position.coords.latitude + " ," + position.coords.longitude, function(data){
+            $.get("https://maps.googleapis.com/maps/api/geocode/json?latlng=" + position.coords.latitude + " ," + position.coords.longitude, + apiKeyForGeoLocation, function(data){
                 console.log(data);
                 
             })
