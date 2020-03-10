@@ -173,6 +173,10 @@ h2 {
 }
 
 a{
-	display: block;
+	display:block;
 	text-decoration: underline;
+}
+
+a:hover{
+	display:block;
 }
