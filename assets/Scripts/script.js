@@ -143,7 +143,7 @@ $(document).ready(function () {
             async: true,
             dataType: "json",
             success: function (json) {
-                // console.log(json);
+                console.log(json);
                 // console.log(json._embedded.events[0]
                 var events = json._embedded.events
 
@@ -162,7 +162,7 @@ $(document).ready(function () {
                     var eventImg = $("<img>").attr("src", events[i].images[0].url).attr("height", 150).attr("width", 250);
                     var eventName = $("<h5>").text(events[i].name);
                     var eventDateTime = $("<p>").text("Date: " + events[i].dates.start.localDate + " Time: " + (events[0].dates.start.localTime));
-                    var eventVenue = $("<a>").attr("href", "https://map.google.com/maps?q=" + events[0].dates.start.localTime).text("Event Venue: " + events[i]._embedded.venues[0].name);
+                    var eventVenue = $("<a>").attr("href", "https://map.google.com/maps?q=" + events[i]._embedded.venues[0].name).text("Event Venue: " + events[i]._embedded.venues[0].name);
                     var eventUrl = $("<a>").attr("href", events[i].url).attr("target", "_blank").text("Purchase Tickets");
 
                     newEventDiv.append(eventImg, eventName, eventDateTime, eventVenue, eventUrl);
