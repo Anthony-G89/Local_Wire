@@ -67,7 +67,7 @@ $(document).ready(function () {
                     var brewCityP = $("<p>").text(res[i].city);
                     var brewStateP = $("<p>").text(res[i].state);
                     var brewPostalP = $("<p>").text(res[i].postal_code);
-                    var brewPhoneP = $("<p>").attr("href", "tel:" + res[i].phone).text("Phone: " +  res[i].phone);
+                    var brewPhoneP = $("<a>").attr("href", "tel:" + res[i].phone).text("Phone: " +  res[i].phone);
                     var brewWebP = $("<a>").attr("href", res[i].website_url).attr("target", "_blank").text("Visit Website");
 
                     newBrewDiv.append(brewNameP, brewTypeP, brewAddressP, brewCityP,brewStateP,brewPostalP, brewPhoneP, brewWebP)
