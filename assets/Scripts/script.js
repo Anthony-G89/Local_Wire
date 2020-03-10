@@ -49,11 +49,11 @@ $(document).ready(function () {
                     var newBrewDiv = $("<div>").addClass("brew-card card");
                     var brewNameP = $("<h5>").text(res[i].name);
                     var brewTypeP = $("<p>").text("BREWERY TYPE: " + res[i].brewery_type);
-                    var brewAddressP = $("<a>").attr("href","https://map.google.com/maps?q=" + res[i].street).text(res[i].street);
-                    var brewCityP = $("<a>").attr("href","https://map.google.com/maps?q=" + res[i].city).text(res[i].city);
-                    var brewStateP = $("<a>").attr("href","https://map.google.com/maps?q=" + res[i].state).text(res[i].state);
-                    var brewPostalP = $("<a>").attr("href","https://map.google.com/maps?q=" + res[i].postal_code).text(res[i].postal_code);
-                    var brewPhoneP = $("<a>").attr("href", "tel:" + res[i].phone).text("Phone: " +  res[i].phone);
+                    var brewAddressP = $("<a>").attr("href","https://map.google.com/maps?q=" + res[i].street + res[i].city + res[i].state + res[i].postal_code).attr("target","_blank").text(res[i].street);
+                    var brewCityP = $("<p>").text(res[i].city);
+                    var brewStateP = $("<p>").text(res[i].state);
+                    var brewPostalP = $("<p>").text(res[i].postal_code);
+                    var brewPhoneP = $("<p>").attr("href", "tel:" + res[i].phone).text("Phone: " +  res[i].phone);
                     var brewWebP = $("<a>").attr("href", res[i].website_url).attr("target", "_blank").text("Visit Website");
 
                     newBrewDiv.append(brewNameP, brewTypeP, brewAddressP, brewCityP,brewStateP,brewPostalP, brewPhoneP, brewWebP)
