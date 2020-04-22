@@ -22,7 +22,7 @@ SO THAT I can plan to eat, drink, and party accordingly
 
 ![Home](/assets/images/Index_SS.png)
 ![Search](/assets/images/Search_SS.png)
-![Results](/assets/images/Results_SS.png)
+
 
 
 ## Application Requirements
