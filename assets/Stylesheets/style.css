@@ -88,7 +88,7 @@ h2 {
 	font-family: 'Montserrat', sans-serif;
 	margin: 0;
 	border: none;
-	color: black;
+	color: #f44336;
 	font-weight: bold;
 	text-decoration: underline;
 }
@@ -141,7 +141,7 @@ h2 {
     height: 281px;
     margin: 3rem;
     width: 345px;
-    box-shadow: 0 3px 6px darkgreen;
+    box-shadow: 13px 19px 13px black;
 	display: inline-block;
 	overflow: hidden;
 }
@@ -152,7 +152,7 @@ h2 {
     margin: 3rem;
     position: relative;
     width: 345px;
-    box-shadow: 0 3px 6px darkgreen;
+    box-shadow: 13px 19px 13px black;
 	display: inline-block;
 	overflow: hidden;
 }
@@ -163,7 +163,7 @@ h2 {
     margin: 3rem;
     position: relative;
     width: 345px;
-    box-shadow: 0 3px 6px darkgreen;
+    box-shadow: 13px 19px 13px black;
 	display: inline-block;
 	overflow: hidden;
 }
