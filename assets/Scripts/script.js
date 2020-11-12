@@ -56,12 +56,12 @@ $(document).ready(function () {
                 $(".brew-display").empty();
                 for (var i = 0; i < res.length; i++) {
                     var newBrewDiv = $("<div>").addClass("brew-card card");
-                    var brewNameP = $("<h5>").text(res[i].name);
-                    var brewTypeP = $("<p>").text("BREWERY TYPE: " + res[i].brewery_type);
+                    var brewNameP = $("<h5>").text(res[i].name).css("color", "#496c4a");
+                    var brewTypeP = $("<p>").text("BREWERY TYPE: " + res[i].brewery_type).wrapInner("<strong/>");
                     var brewAddressP = $("<a>").attr("href", "https://map.google.com/maps?q=" + res[i].street + res[i].city + res[i].state + res[i].postal_code).attr("target", "_blank").text(res[i].street);
-                    var brewCityP = $("<p>").text(res[i].city);
-                    var brewStateP = $("<p>").text(res[i].state);
-                    var brewPostalP = $("<p>").text(res[i].postal_code);
+                    var brewCityP = $("<p>").text(res[i].city).wrapInner("<strong/>");
+                    var brewStateP = $("<p>").text(res[i].state).wrapInner("<strong/>");
+                    var brewPostalP = $("<p>").text(res[i].postal_code).wrapInner("<strong/>");
                     var brewPhoneP = $("<a>").attr("href", "tel:" + res[i].phone).text("Phone: " + res[i].phone);
                     var brewWebP = $("<a>").attr("href", res[i].website_url).attr("target", "_blank").text("Visit Website");
 
@@ -110,10 +110,10 @@ $(document).ready(function () {
                     var newRestDiv = $("<div>").addClass("rest-card card");
 
                     // var restImg = $("<img>").attr("src", restList[i].restaurant.featured_image).attr("height", 150).attr("width", 200);
-                    var restNameP = $("<h5>").text(restList[i].restaurant.name);
-                    var restCuisineP = $("<p>").text(restList[i].restaurant.cuisines);
+                    var restNameP = $("<h5>").text(restList[i].restaurant.name).css("color", "#496c4a");
+                    var restCuisineP = $("<p>").text(restList[i].restaurant.cuisines).wrapInner("<strong/>");
                     var restAddressP = $("<a>").attr("href", "https://map.google.com/maps?q=" + restList[i].restaurant.location.address).text(restList[i].restaurant.location.address);
-                    var restLocality = $("<p>").text("Locality: " + restList[i].restaurant.location.locality);
+                    var restLocality = $("<p>").text("Locality: " + restList[i].restaurant.location.locality).wrapInner("<strong/>");
                     var restPhoneP = $("<a>").attr("href", "tel:" + restList[i].restaurant.phone_numbers).text("Phone: " + restList[i].restaurant.phone_numbers);
                     var restMenu = $("<a>").attr("href", restList[i].restaurant.menu_url).attr("target", "_blank").text("View Menu");
                     newRestDiv.append(restNameP, restCuisineP, restAddressP, restLocality, restPhoneP, restMenu);
@@ -144,13 +144,14 @@ $(document).ready(function () {
                     var newEventDiv = $("<div>").addClass("event-card card");
 
                     var eventImg = $("<img>").attr("src", events[i].images[0].url).attr("height", 150).attr("width", 250);
-                    var eventName = $("<h5>").text(events[i].name);
-                    var eventDateTime = $("<p>").text("Date: " + events[i].dates.start.localDate + " Time: " + (events[0].dates.start.localTime));
+                    var eventName = $("<h5>").text(events[i].name).css("color", "#496c4a");
+                    var eventDate = $("<p>").text("Date: " + events[i].dates.start.localDate);
+                    var eventTime = $("<p>").text("Time: " + events[0].dates.start.localTime)
                     // var eventDateTime = $("<p>").text(moment(events[0].dates.start.localTime + "Time:").format('hh'));
                     var eventVenue = $("<a>").attr("href", "https://map.google.com/maps?q=" + events[i]._embedded.venues[0].name).text("Event Venue: " + events[i]._embedded.venues[0].name);
                     var eventUrl = $("<a>").attr("href", events[i].url).attr("target", "_blank").text("Purchase Tickets");
 
-                    newEventDiv.append(eventImg, eventName, eventDateTime, eventVenue, eventUrl);
+                    newEventDiv.append(eventImg, eventName, eventDate, eventTime, eventVenue, eventUrl);
                     $(".event-display").append(newEventDiv);
 
                 }
