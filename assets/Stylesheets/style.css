@@ -70,7 +70,7 @@ body {
 	color: rgb(59, 56, 56);
 	cursor: pointer;
 	font-family: 'Roboto', sans-serif;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	width: 50%;
 	text-align: center;
 	justify-content: center;

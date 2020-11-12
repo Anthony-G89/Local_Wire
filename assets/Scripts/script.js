@@ -1,4 +1,4 @@
-zomatoApi = "5a33e1ec7d6535e6ef16c81e3833e48a";
+zomatoApi = "84afddd391326711f450ba0eaa93ba2b";
 ticketmasterApi = "mGRhyVGMqSKLiGRVm4XLR9SJBSPsX0Eg";
 zomatoURL = "https://developers.zomato.com/api/v2.1/cities?q=Orlando";
 breweryURL = "https://api.openbrewerydb.org/breweries?by_city=san_diego";
@@ -82,10 +82,12 @@ $(document).ready(function () {
             method: "GET",
             headers: {
                 "Accept": "application/json",
-                "user-key": "5a33e1ec7d6535e6ef16c81e3833e48a"
+                "user-key": "84afddd391326711f450ba0eaa93ba2b"
             }
         }).then(function (res) {
             // console.log("city id " + res.location_suggestions[0].id)
+            // console.log(res);
+
             var cityID = res.location_suggestions[0].id;
 
             var zomatoListURL = "https://developers.zomato.com/api/v2.1/search?entity_id=" + cityID + "&entity_type=city";
@@ -96,7 +98,7 @@ $(document).ready(function () {
                 method: "GET",
                 headers: {
                     "Accept": "application/json",
-                    "user-key": "5a33e1ec7d6535e6ef16c81e3833e48a"
+                    "user-key": "84afddd391326711f450ba0eaa93ba2b"
                 }
             }).then(function (res) {
                 var restList = res.restaurants;
@@ -107,14 +109,14 @@ $(document).ready(function () {
 
                     var newRestDiv = $("<div>").addClass("rest-card card");
 
-                    var restImg = $("<img>").attr("src", restList[i].restaurant.featured_image).attr("height", 150).attr("width", 200);
+                    // var restImg = $("<img>").attr("src", restList[i].restaurant.featured_image).attr("height", 150).attr("width", 200);
                     var restNameP = $("<h5>").text(restList[i].restaurant.name);
                     var restCuisineP = $("<p>").text(restList[i].restaurant.cuisines);
                     var restAddressP = $("<a>").attr("href", "https://map.google.com/maps?q=" + restList[i].restaurant.location.address).text(restList[i].restaurant.location.address);
                     var restLocality = $("<p>").text("Locality: " + restList[i].restaurant.location.locality);
                     var restPhoneP = $("<a>").attr("href", "tel:" + restList[i].restaurant.phone_numbers).text("Phone: " + restList[i].restaurant.phone_numbers);
                     var restMenu = $("<a>").attr("href", restList[i].restaurant.menu_url).attr("target", "_blank").text("View Menu");
-                    newRestDiv.append(restImg, restNameP, restCuisineP, restAddressP, restLocality, restPhoneP, restMenu);
+                    newRestDiv.append(restNameP, restCuisineP, restAddressP, restLocality, restPhoneP, restMenu);
                     $(".rest-display").append(newRestDiv);
 
                 }
