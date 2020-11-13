@@ -58,11 +58,11 @@ SO THAT I can plan to eat, drink, and party accordingly
 
 
 * The URL of the deployed application:
-https://knuckleh3ad89.github.io/Project_One/
+
 
 
 * The URL of the GitHub repository:
-https://github.com/knuckleh3ad89/Project_One
+
 
 
 
