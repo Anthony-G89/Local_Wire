@@ -93,8 +93,7 @@ h2 {
 	text-decoration: underline;
 }
 
-#topBtn {
-	/* display: none; */
+.topBtn {
 	position: fixed;
 	bottom: 20px;
 	right: 30px;
@@ -107,10 +106,18 @@ h2 {
 	padding: 15px;
 	border-radius: 10px;
 	font-size: 18px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
 
 }
 
-#bottomBtn {
+.topBtn.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+.bottomBtn {
 	/* display: none; */
 	position: fixed;
 	bottom: 20px;
@@ -124,8 +131,17 @@ h2 {
 	padding: 15px;
 	border-radius: 10px;
 	font-size: 18px;
-
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.5s;
 }
+
+.bottomBtn.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+
 /* Materialize Search*/
 #searchForm {
 	max-width: 500px;
