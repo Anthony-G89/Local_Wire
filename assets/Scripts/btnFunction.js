@@ -10,15 +10,15 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("scroll", function () {
     var scroll = document.querySelector(".topBtn");
-    scroll.classList.toggle("active", window.scrollY > 200)
+    scroll.classList.toggle("active", window.scrollY > 600)
 });
 
 window.addEventListener("scroll", function () {
     var scroll = document.querySelector(".bottomBtn");
-    scroll.classList.toggle("active", window.scrollY > 5150)
+    scroll.classList.toggle("active", window.scrollY > 2150)
 });
 
-topBtn.on("click", function () {
+topBtn.on("click",  () => {
     $("html, body").animate({scrollTop: 0}, "slow")
 });
 
