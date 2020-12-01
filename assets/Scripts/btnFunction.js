@@ -23,34 +23,9 @@ topBtn.on("click",  () => {
 });
 
 bottomBtn.on("click", () => {
-    $("html, body").animate({scrollTop: 12589}, "slow")
+    $("html, body").animate({scrollTop: 20589}, "slow")
 });
 
-
-
-// $(document).ready (function (){
-//     $("#topBtn").hide();
-
-
-// });
-
-
-// $(window).scroll(function(){
-//     $('#topBtn').addClass('scrolled', $(this).scrolltop() > 10);
-// });
-
-
-// $(document).ready(function() {
-//     $("#mydiv").hide();
-//     $("#show").click(function() {
-//       $("#mydiv").toggle();
-//       $("#show").toggle();
-//     });
-//     $("#hide").click(function() {
-//       $("#mydiv").hide();
-//       $("#show").show();
-//     });
-//   });
  
 // $(document).ready(function (){
 
@@ -76,25 +51,7 @@ bottomBtn.on("click", () => {
 
 
 
-// window.onscroll = function () {scrollFunction() };
 
-
-//         function scrollFunction () {
-//             if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-//                 topBtn.style.display = "block";
-
-//             }else {
-//                 topBtn.style.display = "none"
-//             }
-//         }
-
-
-// jQuery(window).scroll(function () {
-    //     var topButton = jQuery("#topBtn");
-    
-    //     if(jQuery(this).scrollTop() >= 200) topButton.addClass("shown");
-    //     else topButton.removeClass("shown");
-    // })
     
 
 
