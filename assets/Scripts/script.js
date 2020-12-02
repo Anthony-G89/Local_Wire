@@ -136,7 +136,7 @@ $(document).ready(function () {
             success: function (json) {
                 
                 var events = json._embedded.events
-                console.log(events);
+                // console.log(events);
                 
 
                 $(".event-display").empty();
