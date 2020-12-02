@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
 	var searchButton = $('#searchBtn');
 	var searchForm = $('#searchForm');
 	var closeForm = $('#closeForm');
