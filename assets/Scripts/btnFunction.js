@@ -23,7 +23,7 @@ topBtn.on("click",  () => {
 });
 
 bottomBtn.on("click", () => {
-    $("html, body").animate({scrollTop: 20589}, "slow")
+    $("html, body").animate({scrollTop: 22589}, "slow")
 });
 
  
