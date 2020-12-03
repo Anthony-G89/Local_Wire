@@ -32,7 +32,7 @@ None
 Enter the city you are in to see your local breweries, restaurants, and event. You must enter a start date and end date to see events going on around you.
 
 
-![Home](/assets/images/Local-wire-home.png)
+![Home](/assets/images/Local-wire-HomePage.png)
 ![Search](/assets/images/Local-wire-searchForm.png)
 ![Results](/assets/images/Local-wire-results.png)
 
